@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --pink:#E670A1;
+    --white:#ffffff;
+    --black:#000000;
+
+}
+/* LAYOUT */
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* STYLESHEET */
+
+main {
+    background-color: var(--white);
+    display: grid;
+    gap:51px;
+    padding: 0;
+    max-width: 100% ;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    padding: 21px;
+    
+}
+
+.option-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+/* HEADER */
+
+header img{
+    width: 51px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.icon-nav{
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-nav{
+    margin: auto;
+}
+
+header a{
+    color: var(--black);
+    text-decoration: none;
+    margin: 1rem;
+}
+
+/* HERO */
+.hero-card{
+    display: grid;
+}
+
+.hero-img{
+    width: 100%;
+    max-height: 219px;
+    object-fit: cover;
+    grid-area: 1/1/-1/-1;
+}
+
+.hero-text{
+    grid-area: 1/1/-1/-1;
+    width: 338px;
+    padding-right: 68px;
+    margin-top: 69px;
+    margin-left: 40px;
+    margin-right: auto;
+    color: var(--pink);
+}
+.hero-text h1{
+    text-transform: uppercase;
+    -webkit-text-stroke: #ffffff 0.5px;
+    font-size: 35px;
+    
+} 
+.hero-text h3{
+    color: var(--black);
+}
+/* HOME ABOUT US */
+#quick-about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#quick-about img{
+    max-width: 40%;
+    object-fit: cover;
+}
+.quick-about-text{
+    margin-left: 40px;
+    max-width: 400px;
+}
+/* SHOP PAGE */
+.shop-nav{
+    display: flex;
+    grid-column: 1/5;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#cupcakes-shop{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+.shop-cards img{
+    object-fit: cover;
+    height: 500px;
+    width: 400px
+}
+.shop-cards{
+    max-width: 100%;
+    
+}
+
+/* ABOUT PAGE */
+#who-we-are{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+#who-we-are h1{
+    color: var(--pink);
+    
+}
+
+#who-we-are p{
+    max-width: 800px;
+}
+/* FOOTER */
+footer{
+    padding-top: 40px;
+    border-top: var(--black) 1px solid;
+    display: flex;
+    margin-bottom: 40px;
+
+}
+
+.nav-catergories{
+    margin-left: 20px;
+}
+
+.nav-catergories a{
+    text-decoration: none;
+    color: #000000;
+}
+/* BUTTONS */
+.hero-text button{
+    border: none;
+    max-width: 100px;
+    background-color: #E670A1;
+    border-radius: 5px;
+    
+}
+
+
+/* TYPOGRAPHY */
